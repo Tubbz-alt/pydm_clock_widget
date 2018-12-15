@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>304</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Sans Serif</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: black</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="Clock" name="Clock">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="hoursChannel" stdset="0">
+      <string>ca://CUD:MCC0:CLOCKHOUR</string>
+     </property>
+     <property name="minutesChannel" stdset="0">
+      <string>ca://CUD:MCC0:CLOCKMIN</string>
+     </property>
+     <property name="secondsChannel" stdset="0">
+      <string>ca://CUD:MCC0:CLOCKSEC</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Clock</class>
+   <extends>QWidget</extends>
+   <header>clock</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
